@@ -28,6 +28,8 @@ typedef enum
     CLOSE_BRACKET, // ]
     SEMICOLON, // ;
     COMMA, // ,
+    SMALLER, // <
+    GREATER, // >
 
     WHITESPACE, // 공백
     UNKNOWN, //모르는 문자

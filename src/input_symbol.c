@@ -31,6 +31,8 @@ int get_input_symbol(char ch)
     case ']': return CLOSE_BRACKET;
     case ';': return SEMICOLON;
     case ',': return COMMA;
+    case '<': return SMALLER;
+    case '>': return GREATER;
     case ' ': return WHITESPACE;
     case '\0': return SYMBOL_EOF;
     }
