@@ -143,7 +143,9 @@ typedef enum
     t_kw_while,
     t_kw_return,
     t_kw_int,
-    t_kw_void
+    t_kw_void,
+
+    t_error
 } TOKEN;
 
 #endif //STATES_AND_TOKENS_H

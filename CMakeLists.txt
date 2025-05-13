@@ -8,4 +8,5 @@ add_executable(complier main.c
         headers/input_symbol.h
         src/input_symbol.c
         headers/transition_table.h
-        src/transition_table.c)
+        src/transition_table.c
+        src/lex.c)
