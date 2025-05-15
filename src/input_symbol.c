@@ -6,10 +6,10 @@
 
 int get_input_symbol(char ch)
 {
-    if (isalpha(ch) == 1 || ch == '_') // 알파벳이면
+    if (isalpha((unsigned char)ch) || ch == '_') // 알파벳이면
         return LETTER;
 
-    if (isdigit(ch) == 1) // 숫자면
+    if (isdigit((unsigned char)ch)) // 숫자면
         return DIGIT;
 
     switch (ch) //그 외 기호면

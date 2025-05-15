@@ -9,7 +9,7 @@
 #include "input_symbol.h"
 
 #define STATE_COUNT 48 // 현재 이 어휘분석기에서 상태는 48, 입력 심볼은 22개이다.
-#define INPUT_SYMBOL_COUNT 22
+#define INPUT_SYMBOL_COUNT 24
 
 STATE transition_table[STATE_COUNT][INPUT_SYMBOL_COUNT]; // 테이블 선언
 STATE get_next_state(STATE cur_state, INPUT_SYMBOL input_symbol); // 현재 상태에서 입력받았을때의 다음 상태 가져옴

@@ -9,4 +9,6 @@ add_executable(complier main.c
         src/input_symbol.c
         headers/transition_table.h
         src/transition_table.c
-        src/lex.c)
+        src/lex.c
+        headers/lex.h
+        src/states_and_tokens.c)

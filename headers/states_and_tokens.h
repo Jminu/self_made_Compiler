@@ -148,4 +148,6 @@ typedef enum
     t_error
 } TOKEN;
 
+const char* token_to_string(TOKEN token);
+
 #endif //STATES_AND_TOKENS_H

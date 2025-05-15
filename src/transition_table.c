@@ -11,7 +11,7 @@
 void init_transition_table()
 {
     for (int i = 0; i < STATE_COUNT; i++)
-        memset(transition_table[i], -1, INPUT_SYMBOL_COUNT); // 일단 -1로 테이블 초기화
+        memset(transition_table[i], -1, sizeof(STATE) * INPUT_SYMBOL_COUNT); // 일단 -1로 테이블 초기화
 
     // 2) Identifier DFA (s_start, s_in_id -> s_acc_id)
     transition_table[s_start][LETTER] = s_in_id;

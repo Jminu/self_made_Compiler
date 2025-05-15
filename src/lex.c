@@ -14,6 +14,7 @@ TOKEN lex(const char* input, int start_idx, int* read_len)
     {
         i++;
     }
+    int lexeme_start = i;
 
     STATE cur_state = s_start;
     STATE next_state = -1;
@@ -28,6 +29,9 @@ TOKEN lex(const char* input, int start_idx, int* read_len)
 
         if (next_state == -1) // 전이 실패
         {
+            if (cur_state == s_in_decimal) last_state = s_acc_decimal;
+            else if (cur_state == s_in_id) last_state = s_acc_id;
+            if (last_state != -1) last_pos = i - 1;
             break;
         }
 
@@ -82,7 +86,7 @@ TOKEN lex(const char* input, int start_idx, int* read_len)
         return t_error;
     }
 
-    *read_len = last_pos - i + 1; // 읽은 길이
+    *read_len = last_pos - lexeme_start + 1; // 읽은 길이
     // 마지막 상태를 토큰으로 매핑
     switch (last_state)
     {
