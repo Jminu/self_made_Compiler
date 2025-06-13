@@ -1,6 +1,6 @@
-#include "../headers/states_and_tokens.h"
+#include "../../headers/lex/states_and_tokens.h"
 
-#include "../headers/states_and_tokens.h"
+#include "../../headers/lex/states_and_tokens.h"
 
 const char* token_to_string(TOKEN token)
 {

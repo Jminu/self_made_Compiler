@@ -2,10 +2,10 @@
  * lex함수는 스트링을 읽어서 토큰을 반환하는 함수
  */
 
-#include "../headers/states_and_tokens.h"
+#include "../../headers/lex/states_and_tokens.h"
 #include <string.h>
-#include "../headers/input_symbol.h"
-#include "../headers/transition_table.h"
+#include "../../headers/lex/input_symbol.h"
+#include "../../headers/lex/transition_table.h"
 
 TOKEN lex(const char* input, int start_idx, int* read_len)
 {

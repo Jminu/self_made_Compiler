@@ -3,8 +3,8 @@
 //
 
 
-#include "../headers/transition_table.h"
-#include "../headers/input_symbol.h"
+#include "../../headers/lex/transition_table.h"
+#include "../../headers/lex/input_symbol.h"
 #include <string.h>
 
 //테이블 초기화

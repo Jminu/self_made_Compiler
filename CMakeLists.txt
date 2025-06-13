@@ -4,11 +4,11 @@ project(complier C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(complier main.c
-        headers/states_and_tokens.h
-        headers/input_symbol.h
-        src/input_symbol.c
-        headers/transition_table.h
-        src/transition_table.c
-        src/lex.c
-        headers/lex.h
-        src/states_and_tokens.c)
+        headers/LRparser/ACTIONtable.h
+        headers/LRparser/GOTOtable.h
+        src/LRparser/action_table.c
+        src/LRparser/goto_table.c
+        headers/LRparser/stack.h
+        src/LRparser/stack.c
+        headers/LRparser/parser.h
+        src/LRparser/parser.c)

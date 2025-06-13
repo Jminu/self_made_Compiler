@@ -1,7 +1,7 @@
 //
 // input_symbol 관련
 //
-#include "../headers/input_symbol.h"
+#include "../../headers/lex/input_symbol.h"
 #include <ctype.h>
 
 int get_input_symbol(char ch)
